@@ -15,6 +15,10 @@ var ds = loopback.createDataSource({ connector: loopback.Memory });
 Token.attachTo(ds);
 var ACL = loopback.ACL;
 
+beforeEach(function() {
+  this.app = app = loopback();
+});
+
 describe('loopback.token(options)', function() {
   beforeEach(createTestingToken);
 

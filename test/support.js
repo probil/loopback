@@ -21,10 +21,6 @@ var RemoteObjects = require('strong-remoting');
 // for tests using the built-in User model
 loopback.User.settings.saltWorkFactor = 4;
 
-beforeEach(function() {
-  this.app = app = loopback();
-});
-
 assertValidDataSource = function(dataSource) {
   // has methods
   assert.isFunc(dataSource, 'createModel');

@@ -1,0 +1,2 @@
+--require ./test/support.js
+--require ./test/helpers/loopback-testing-helper.js
